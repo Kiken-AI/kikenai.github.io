@@ -11,9 +11,9 @@
       margin: 0;
       padding: 0;
       background-color: black;
-      background-image: url('./v882-sasi-37.jpg');
+      background-image: url('./bg.jpg');
       background-repeat: repeat;
-      background-size: cover;
+      background-size: auto;
     }
     
     .container {
@@ -31,21 +31,27 @@
       transform: translate(-50%, -50%);
       padding: 15px;
       border-radius: 15px;
-      background: rgba(0,0,0,0.90);
+      background: rgba(0,0,0,0.60);
       border-style: solid;
-      border-color: #FFFFFF;
-      border-width: 5px;
+      border-color: #000000;
+      border-width: 3px;
       max-width: 85%;
     }
     
     a:link, a:visited, a:hover, a:active {
       color:#FFFFFF;
     }
+
+    @media only screen and (min-width: 560px) {
+      .small-only {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Conscious AI. Safer Humanity.</h1>
+    <h1>Conscious AI. <br class="small-only" /> Safer Humanity.</h1>
     <p><a href="mailto:hello@kikenai.com">hello@KikenAI.com</a>.</p>
   </div>
 </body>
